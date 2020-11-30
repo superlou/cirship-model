@@ -1,0 +1,4 @@
+*.log
+*.libs
+*.makefile
+*.mat
