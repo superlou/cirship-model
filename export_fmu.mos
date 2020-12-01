@@ -1,5 +1,5 @@
 loadModel(Modelica);
 loadFile("Breaker.mo");
-loadFile("Cirship.mo");
 loadFile("R2B.mo");
-translateModelFMU(Cirship);
+loadFile("Cirship.mo");
+translateModelFMU(Cirship, fmuType="cs");
