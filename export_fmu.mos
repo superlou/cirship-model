@@ -1,5 +1,4 @@
 loadModel(Modelica);
-loadFile("Breaker.mo");
-loadFile("R2B.mo");
-loadFile("Cirship.mo");
+models := {"Breaker", "ACSComputer", "Environment", "Human", "Cirship"};
+{loadFile(filename + ".mo") for filename in models};
 translateModelFMU(Cirship, fmuType="cs");
